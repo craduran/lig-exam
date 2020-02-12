@@ -1,0 +1,80 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+    font-family: $primary-font;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+h2 {
+    margin: 0px;
+}
+.flexbox {
+    display: flex;
+}
+.flexbox--alignitems-center {
+    align-items: center;
+}
+.flexbox--justifycontent-spacebetween {
+    justify-content: space-between;
+}
+.ml-20 {
+    margin-left: 20px;
+}
+.container {
+    padding: 0px 160px;
+}
+.logo {
+    font-family: $logo-font;
+}
+.list-detail__date {
+    font-size: 13px;
+    font-family: $secondary-font;
+    color: $grey;
+    margin-bottom: 8px;
+}
+.list-detail__title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 23px;
+    margin-bottom: 5px;
+}
+.list-detail__description {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+a.list{
+    color: $black;
+    text-decoration: none;
+    &:hover {
+        .list-detail__title {
+            color: $secondary-color;
+        }
+    }
+}
+footer {
+    background-color: $black;
+    color: $white;
+    font-size: 13px;
+    font-weight: 400;
+    height: 50px;
+}
+aside {
+    min-width: 340px;
+    margin-left: 58px;
+}
+.sidebar {
+    height: auto; 
+    background-color: $grey-lighter;
+}
+
+.main {
+    padding-bottom: 90px;
+}
+
+.copyright {
+    font-size: 14px;
+    font-family: $secondary-font;
+}

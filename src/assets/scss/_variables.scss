@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "YuGothic";
+    src: url(assets/fonts/yugothib.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: "YuGothic";
+    src: url(assets/fonts/yugothil.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Helvetica";
+    src: url(assets/fonts/helvetica.ttf);
+}
+
+$logo-font: "Lucida Calligraphy", serif;
+$primary-font: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", 'メイリオ', Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+$secondary-font: "Helvetica", sans-serif;
+
+$grey: #999999;
+$grey-lighter: #efefef;
+$black: #000000;
+$white: #ffffff;
+$secondary-color: #e7ba2f;
