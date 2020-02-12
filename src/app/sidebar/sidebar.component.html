@@ -1,3 +1,14 @@
 <div class="sidebar">
-    Sample
+    <app-banner class="banner banner--large" bannerType="large"></app-banner>
+    <div>
+        <h2 class="text--center section-title">Recommend</h2>
+        <ul class="recommended-lists">
+            <li class="recommended-list" *ngFor="let list of recommendedLists">
+                <app-recommend-list [list]="list"></app-recommend-list>
+            </li>
+        </ul>
+    </div>
+    <app-banner class="banner banner--small" bannerType="small"></app-banner>
+    <app-banner class="banner banner--small" bannerType="small"></app-banner>
+    <app-banner class="banner banner--small" bannerType="small"></app-banner>
 </div>

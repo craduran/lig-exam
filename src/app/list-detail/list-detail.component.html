@@ -1,1 +1,10 @@
-<p>list-detail works!</p>
+<a href="#" class="list flexbox">    
+    <div class="list__image-container">
+        <img class="list__thumbnail" src='{{imageSrc}}'  alt="{{listTitle}}" >
+    </div>    
+    <div class="list-detail">
+        <span class="list-detail__date">{{listDate | date: 'yyyy.LL.dd'}}</span>
+        <h1 class="list-detail__title">{{listTitle}}</h1>
+        <p class="list-detail__description">{{listDesc | truncate: 72}}<span>&#8230;</span></p> <!-- 72 characters-->
+    </div>
+</a>

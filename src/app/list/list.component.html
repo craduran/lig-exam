@@ -1,10 +1,8 @@
-<div *ngFor="let list of lists">
-    <a href="#" class="list flexbox">        
-        <img />
-        <div class="list-detail">
-            <div class="list-detail__date">{{list.date | date: 'yyyy.LL.dd'}}</div>
-            <h2 class="list-detail__title">{{list.title}}</h2>
-            <div class="list-detail__description">{{list.description}}</div>
-        </div>
+<article *ngFor="let list of lists" class="list__container">
+    <app-list-detail [imageSrc]="list.image" [listDate]="list.date" [listTitle]="list.title" [listDesc]="list.description"></app-list-detail>
+</article>
+<div class="flexbox flexbox--justifycontent-spacearound pt-20">
+    <a class="more-link flexbox">
+        <div class="flexbox--grow1 text--center">More</div>
     </a>
 </div>

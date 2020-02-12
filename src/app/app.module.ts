@@ -8,6 +8,11 @@ import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ListComponent } from './list/list.component';
 import { ListDetailComponent } from './list-detail/list-detail.component';
+import { TruncatePipe } from './truncate.pipe';
+import { BannerComponent } from './banner/banner.component';
+import { RecommendListComponent } from './recommend-list/recommend-list.component';
+import { AppRoutingModule } from './app-routing/app-routing.module';
+import { PageComponent } from './page/page.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +22,15 @@ import { ListDetailComponent } from './list-detail/list-detail.component';
     FooterComponent,
     SidebarComponent,
     ListComponent,
-    ListDetailComponent
+    ListDetailComponent,
+    TruncatePipe,
+    BannerComponent,
+    RecommendListComponent,
+    PageComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

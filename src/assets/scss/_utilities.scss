@@ -1,0 +1,47 @@
+
+.flexbox { 
+    display: flex;
+}
+.flexbox--grow1 {
+    flex-grow: 1;
+}
+.flexbox--alignitems-center {
+    align-items: center;
+}
+.flexbox--justifycontent-spacebetween {
+    justify-content: space-between;
+}
+.flexbox--justifycontent-spacearound {
+    justify-content: space-around;
+}
+.text--center {
+    text-align: center;
+}
+.flexbox--column {
+    flex-direction: column;
+}
+.ml-20 {
+    margin-left: 20px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mt-30 {
+    margin-top: 30px;
+}
+.pt-20 {
+    padding-top: 20px;
+}
+.container { 
+    max-width: 1080px;
+    margin: auto;
+    box-sizing: border-box;
+}
+.ellipsis {
+    position: relative;
+    top: -3px;
+}
+
+.width--full {
+    width: 100%;
+}

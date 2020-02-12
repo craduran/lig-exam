@@ -1,29 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 
-* {
+html {
     font-family: $primary-font;
 }
 body {
     margin: 0px;
     padding: 0px;
 }
-h2 {
+ul {
+    padding: 0px;
     margin: 0px;
 }
-.flexbox { 
-    display: flex;
+li {
+    list-style: none;
 }
-.flexbox--alignitems-center {
-    align-items: center;
-}
-.flexbox--justifycontent-spacebetween {
-    justify-content: space-between;
-}
-.ml-20 {
-    margin-left: 20px;
-}
-.container {
-    padding: 0px 160px;
+h1,h2,h3,h4,h5,h6 {
+    margin: 0px;
 }
 .logo {
     font-family: $logo-font;
@@ -33,42 +25,94 @@ h2 {
     font-family: $secondary-font;
     color: $grey;
     margin-bottom: 8px;
+    display: block;
+}
+.recommended-list__date {
+    font-size: 12px;
+    font-family: $secondary-font;
+    color: $grey;
+    display: block;
 }
 .list-detail__title {
     font-size: 18px;
     font-weight: 600;
     line-height: 23px;
     margin-bottom: 6px;
+    letter-spacing: -0.2px;
 }
 .list-detail__description {
     font-size: 13px;
     font-weight: 400;
     line-height: 18px;
+    letter-spacing: -0.4px;
+    margin: 0px;
 }
 
-a.list{
+.list__container {
+    margin-bottom: 40px;
+    &:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+a{
     color: $black;
     text-decoration: none;
     &:hover {
-        .list-detail__title {
-            color: $secondary-color;
+        .list-detail__title, .recommended-list__title {
+            color: $primary-color;
         }
     }
+}
+.section-title {
+    margin-top: 32px;
+    border-bottom: 2px solid $black;
+    letter-spacing: 2px;
+}
+.recommended-lists {
+    padding: 20px 0px;
+}
+.recommended-list:not(:last-child) {
+    margin-bottom: 20px
+}
+.recommended-list__title {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0px;
+    margin-bottom: 1px;
+}
+.recommended-list__image-container {
+    min-width: 112px;
+    min-height: 63px;
+    height: 63px;
+    margin-right: 8px;
+    overflow: hidden;
+}
+.recommended-list__thumbnail {
+    width: 100%;
+    height: auto;
 }
 footer {
     background-color: $black;
     color: $white;
     font-size: 13px;
     font-weight: 400;
+}
+.footer__container {
     height: 50px;
+    position: relative;
 }
 aside {
     min-width: 340px;
-    margin-left: 35px;
+    width: 340px;
+    margin-left: 50px;
+    box-sizing: border-box;
 }
 .sidebar {
     height: auto; 
     background-color: $grey-lighter;
+    padding: 20px;
 }
 
 .main {
@@ -79,9 +123,52 @@ aside {
     font-size: 14px;
     font-family: $secondary-font;
 }
-img {
+.list__image-container {
     min-width: 206px;
     min-height: 116px;
     height: 116px;
     margin-right: 16px;
+    overflow: hidden;
+}
+.list__thumbnail {
+    width: 100%;
+    height: auto;
+}
+header {
+    border-top: 3px solid $primary-color;
+}
+
+.banner {
+    width: 100%;
+    font-size: 15.49px;
+    font-family: $secondary-font;
+    cursor: pointer;
+}
+
+.banner--large {
+    background-color: $white;
+    height: 300px;
+}
+
+.banner--small {
+    background-color: $grey-darker;
+    height: 93px;
+    margin-top: 20px;
+    color:white;
+}
+
+.footer__up {
+    position: absolute;
+    top: -24px;
+    color: black;
+    right: 0px;
+}
+
+.more-link {
+    background-color: $grey-darkest;
+    color: $white;
+    font-size: 20px;
+    padding: 8px;
+    font-family: $secondary-font;
+    width: 404px;
 }
