@@ -38,11 +38,12 @@ h2 {
     font-size: 18px;
     font-weight: 600;
     line-height: 23px;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 }
 .list-detail__description {
     font-size: 13px;
     font-weight: 400;
+    line-height: 18px;
 }
 
 a.list{
@@ -63,7 +64,7 @@ footer {
 }
 aside {
     min-width: 340px;
-    margin-left: 58px;
+    margin-left: 35px;
 }
 .sidebar {
     height: auto; 
@@ -77,4 +78,10 @@ aside {
 .copyright {
     font-size: 14px;
     font-family: $secondary-font;
+}
+img {
+    min-width: 206px;
+    min-height: 116px;
+    height: 116px;
+    margin-right: 16px;
 }
