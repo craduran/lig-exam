@@ -1,7 +1,68 @@
 <div class="slider">
-    <div class="slides">
-        <div id="slide1">
-            
+    <div class="container slider__control">
+        <button class="slider__control__button" (click)="previous()">
+            <img src="assets/images/previous.png">
+        </button>
+        <button class="slider__control__button slider__control__button--next" (click)="next()">
+            <img src="assets/images/next.png">
+        </button>
+        <div class="slider__control__slider-bullets">
+            <span class="slider__control__slider-bullets__bullet" [ngClass]="{
+                'slider__control__slider-bullets__bullet--active':currentCount == 1
+            }"></span>
+            <span class="slider__control__slider-bullets__bullet" [ngClass]="{
+                'slider__control__slider-bullets__bullet--active':currentCount == 2
+            }"></span>
+            <span class="slider__control__slider-bullets__bullet" [ngClass]="{
+                'slider__control__slider-bullets__bullet--active':currentCount == 3
+            }"></span>
+        </div>
+    </div>
+    <div class="slider__slides">
+        <div class="slider__slides__content" [ngClass]="{
+            'slider__slides__content--active':currentCount == 1,
+            'slider__slides__content--previous':currentCount == 2,
+            'slider__slides__content--next':currentCount == 3,
+            'slider__slides__content--under': under == 1                   
+        }">
+            <div class="container slider__slides__content__description text--center">
+                <h1 class="slider__slides__content__description__title">キャッチコピーが入ります。</h1>
+                <p class="slider__slides__content__description__sub">
+                    サンプルテキストサンプルテキストサンプルテキストサンプルテキスト<br/>
+                    サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                </p>
+            </div>
+            <img src="assets/images/bg-slider1.jpg" class="slider__slides__content__image" />
+        </div>
+        <div class="slider__slides__content" [ngClass]="{
+            'slider__slides__content--active':currentCount == 2,
+            'slider__slides__content--previous':currentCount == 3,
+            'slider__slides__content--next': currentCount == 1 ,
+            'slider__slides__content--under': under == 2           
+        }">
+            <div class="container slider__slides__content__description text--center">
+                <h1 class="slider__slides__content__description__title">キャッチコピーが入ります。</h1>
+                <p class="slider__slides__content__description__sub">
+                    サンプルテキストサンプルテキストサンプルテキストサンプルテキスト<br/>
+                    サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                </p>
+            </div>
+            <img src="assets/images/bg-slider2.jpg" class="slider__slides__content__image" />
+        </div>
+        <div class="slider__slides__content" [ngClass]="{
+            'slider__slides__content--active':currentCount == 3,
+            'slider__slides__content--previous':currentCount == 1,
+            'slider__slides__content--next':currentCount == 2 ,
+            'slider__slides__content--under': under == 3                  
+        }">
+            <div class="container slider__slides__content__description text--center">
+                <h1 class="slider__slides__content__description__title">キャッチコピーが入ります。</h1>
+                <p class="slider__slides__content__description__sub">
+                    サンプルテキストサンプルテキストサンプルテキストサンプルテキスト<br/>
+                    サンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+                </p>
+            </div>
+            <img src="assets/images/bg-slider3.jpg" class="slider__slides__content__image" />
         </div>
     </div>
 </div>

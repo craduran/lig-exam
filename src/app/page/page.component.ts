@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router, NavigationEnd } from '@angular/router';
 @Component({
   selector: 'app-page',
   templateUrl: './page.component.html',
@@ -7,7 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { 
+    router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+          return;
+      }
+      window.scrollTo(0, 0)
+    });
+  }
 
   ngOnInit(): void {
   }

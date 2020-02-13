@@ -2,7 +2,7 @@
     <app-list-detail [imageSrc]="list.image" [listDate]="list.date" [listTitle]="list.title" [listDesc]="list.description"></app-list-detail>
 </article>
 <div class="flexbox flexbox--justifycontent-spacearound pt-20">
-    <a class="more-link flexbox">
+    <a class="more-link flexbox" [routerLink]="['/nextpage']">
         <div class="flexbox--grow1 text--center">More</div>
         <i class="material-icons">
         chevron_right   
