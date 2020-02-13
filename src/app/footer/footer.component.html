@@ -1,14 +1,22 @@
 <div class="footer__container container flexbox flexbox--alignitems-center flexbox--justifycontent-spacebetween">
-    <div>
-        運営会社
-        <span class="ml-20">
-            個人情報保護について
-        </span>
-    </div>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">運営会社</a>
+            </li>
+            <li>
+                <a href="#">個人情報保護について</a>
+            </li>
+        </ul>
+    </nav>
     <div>
         <span class="copyright">&copy;2016 Sample</span>
     </div>
     <div class="footer__up">
-        <button (click)="scrollToTop()">^</button>
+        <button (click)="scrollToTop()" class="footer__up__button">
+            <i class="material-icons">
+            expand_less
+            </i>
+        </button>
     </div>
 </div>

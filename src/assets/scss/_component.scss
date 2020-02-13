@@ -157,11 +157,11 @@ header {
     color:white;
 }
 
-.footer__up {
+.footer__up {    
     position: absolute;
-    top: -24px;
+    top: -40px;
     color: black;
-    right: 0px;
+    right: -8px;
 }
 
 .more-link {
@@ -171,4 +171,55 @@ header {
     padding: 8px;
     font-family: $secondary-font;
     width: 404px;
+    .material-icons {
+        font-size: 35px;
+        line-height: 24px;
+    }
+}
+.footer__up__button {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    height: 35px;
+    outline: none;
+    cursor: pointer;
+    i {        
+        font-size: 40px;
+        line-height: 35px;
+    }
+}
+
+nav ul li {
+    display: inline-block;
+    a { 
+        color: $white;
+    }
+    &:not(:first-child) {
+        margin-left: 20px;
+    }
+}
+
+.website-logo {
+    font-size: 60px;
+    font-family: $logo-font;
+    line-height: 124px;
+}
+
+.slider {
+    height: 418px;
+    margin-bottom: 43px;
+}
+
+.slides {
+    height: 100%;
+}
+
+.slide {
+    height: 100%;
+}
+
+#slide1 {
+    background-image: url(assets/images/bg-slider1.jpg);
+    height: 100%;
+    background-size: cover;
 }
