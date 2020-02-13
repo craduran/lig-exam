@@ -1,0 +1,314 @@
+/* You can add global styles to this file, and also import other style files */
+
+html {
+    font-family: $primary-font;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+li {
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0px;
+}
+.logo {
+    font-family: $logo-font;
+}
+.list-detail__date {
+    font-size: 13px;
+    font-family: $secondary-font;
+    color: $grey;
+    margin-bottom: 8px;
+    display: block;
+}
+.recommended-list__date {
+    font-size: 12px;
+    font-family: $secondary-font;
+    color: $grey;
+    display: block;
+}
+.list-detail__title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 23px;
+    margin-bottom: 6px;
+    letter-spacing: -0.2px;
+}
+.list-detail__description {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.4px;
+    margin: 0px;
+}
+
+.list__container {
+    margin-bottom: 40px;
+    &:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+a{
+    color: $black;
+    text-decoration: none;
+    &:hover {
+        .list-detail__title, .recommended-list__title {
+            color: $primary-color;
+        }
+    }
+}
+.section-title {
+    margin-top: 32px;
+    border-bottom: 2px solid $black;
+    letter-spacing: 2px;
+}
+.recommended-lists {
+    padding: 20px 0px;
+}
+.recommended-list:not(:last-child) {
+    margin-bottom: 20px
+}
+.recommended-list__title {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0px;
+    margin-bottom: 1px;
+}
+.recommended-list__image-container {
+    min-width: 112px;
+    min-height: 63px;
+    height: 63px;
+    margin-right: 8px;
+    overflow: hidden;
+}
+.recommended-list__thumbnail {
+    width: 100%;
+    height: auto;
+}
+footer {
+    background-color: $black;
+    color: $white;
+    font-size: 13px;
+    font-weight: 400;
+}
+.footer__container {
+    height: 50px;
+    position: relative;
+}
+aside {
+    min-width: 340px;
+    width: 340px;
+    margin-left: 50px;
+    box-sizing: border-box;
+}
+.sidebar {
+    height: auto; 
+    background-color: $grey-lighter;
+    padding: 20px;
+}
+
+.main {
+    padding-bottom: 90px;
+}
+
+.copyright {
+    font-size: 14px;
+    font-family: $secondary-font;
+}
+.list__image-container {
+    min-width: 206px;
+    min-height: 116px;
+    height: 116px;
+    margin-right: 16px;
+    overflow: hidden;
+}
+.list__thumbnail {
+    width: 100%;
+    height: auto;
+}
+header {
+    border-top: 3px solid $primary-color;
+}
+
+.banner {
+    width: 100%;
+    font-size: 15.49px;
+    font-family: $secondary-font;
+    cursor: pointer;
+}
+
+.banner--large {
+    background-color: $white;
+    height: 300px;
+}
+
+.banner--small {
+    background-color: $grey-darker;
+    height: 93px;
+    margin-top: 20px;
+    color:white;
+}
+
+.footer__up {    
+    position: absolute;
+    top: -40px;
+    color: black;
+    right: -8px;
+}
+
+.more-link {
+    background-color: $grey-darkest;
+    color: $white;
+    font-size: 20px;
+    padding: 8px;
+    font-family: $secondary-font;
+    width: 404px;
+    .material-icons {
+        font-size: 35px;
+        line-height: 24px;
+    }
+}
+.footer__up__button {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    height: 35px;
+    outline: none;
+    cursor: pointer;
+    i {        
+        font-size: 40px;
+        line-height: 35px;
+    }
+}
+
+nav ul li {
+    display: inline-block;
+    a { 
+        color: $white;
+    }
+    &:not(:first-child) {
+        margin-left: 20px;
+    }
+}
+
+.website-logo {
+    font-size: 60px;
+    font-family: $logo-font;
+    line-height: 124px;
+    text-transform: capitalize;
+}
+
+.slider {
+    height: 418px;
+    margin-bottom: 43px;
+    overflow:hidden;
+    position: relative;
+}
+
+.slider__control {    
+    position: relative;
+    height: 100%;
+}
+.slider__control__button {
+    position: absolute;
+    display: block;
+    top: calc(50% - 24px);
+    padding: 0px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    img {
+        display:block;
+    }
+}
+.slider__control__button--next {
+    right: 0px;
+}
+.slider__slides {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+}
+
+.slider__slides__content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 2;
+}
+.slider__slides__content--previous {
+    right: 100%;
+    transition: 0.3s linear right;
+    z-index: 1;
+}
+.slider__slides__content--next {
+    right: -100%;
+    transition: 0.3s linear right;
+    z-index: 1;
+}
+.slider__slides__content--under {
+    z-index: 0;
+}
+.slider__slides__content--active {
+    right: 0%;
+    transition: 0.3s linear right;
+    z-index: 3 !important;
+}
+.slider__slides__content__image {
+    height: auto;
+    width: 100%;
+    top: -82px;
+    position: absolute;
+    z-index: -1;
+}
+
+.slider__slides__content__description {
+    color: $white;
+}
+
+.slider__slides__content__description__title {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 140px;
+    letter-spacing: 4.8px;
+    text-indent: 35px;
+}
+.slider__slides__content__description__sub {
+    font-size: 16px;
+    margin-top: 40px;
+}
+.slider__control__slider-bullets {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 19px;
+}
+.slider__control__slider-bullets__bullet {
+    height: 16px;
+    width: 16px;
+    border-radius: 100%;
+    background-color: $white;
+    display: inline-block;
+    &:not(:first-child) {
+        margin-left: 16px;
+    }
+}
+
+
+.slider__control__slider-bullets__bullet--active {
+    background-color: $primary-color;
+}
